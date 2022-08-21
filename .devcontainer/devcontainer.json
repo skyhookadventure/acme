@@ -1,0 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json
+{
+    "name": "Meltingpot (Python 3)",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    // Configure tool-specific properties.
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            "settings": {
+                "python.linting.enabled": true,
+                "python.formatting.provider": "yapf",
+                "python.formatting.yapfPath": "yapf"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-azuretools.vscode-docker",
+                "donjayamanne.githistory"
+            ]
+        }
+    }
+    // Run the install script on create
+    // "postCreateCommand": "pip install ."
+}
