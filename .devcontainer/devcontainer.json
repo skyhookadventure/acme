@@ -21,7 +21,7 @@
                 "donjayamanne.githistory"
             ]
         }
-    }
+    },
     // Run the install script on create
-    // "postCreateCommand": "pip install ."
+    "postCreateCommand": "pip install ."
 }
