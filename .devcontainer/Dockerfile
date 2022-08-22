@@ -34,3 +34,6 @@ RUN pip install \
     pylance \
     toml \
     yapf
+
+# Set the python path
+ENV PYTHONPATH="/workspaces/acme"
